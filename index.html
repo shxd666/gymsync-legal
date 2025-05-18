@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymSync - Your Ultimate Fitness Companion</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5; /* A slightly softer light background */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            align-items: center; /* Center content horizontally */
+        }
+        .page-wrapper {
+            width: 100%;
+            max-width: 960px; /* Max width for content */
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        header {
+            background: linear-gradient(135deg, #6DD5FA, #2980B9); /* Blue gradient */
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        header .app-icon { /* For your app icon image */
+            max-height: 80px; /* Adjust as needed */
+            margin-bottom: 15px;
+            border-radius: 16px; /* If your icon has a background */
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        header p.tagline {
+            margin-top: 8px;
+            font-size: 1.2em;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+        .container {
+            padding: 30px 20px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            margin: 20px; /* Margin around the main content block */
+            flex-grow: 1;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            font-size: 1.8em;
+            color: #2c3e50; /* Dark blue-grey */
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #3498db; /* Blue accent */
+        }
+        .section p, .section ul li {
+            font-size: 1.05em;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .section ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+        .app-stores { /* For App Store / Play Store buttons */
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        .app-stores img {
+            height: 50px; /* Adjust as needed */
+            margin: 0 10px;
+            transition: transform 0.2s ease-in-out;
+        }
+        .app-stores img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 25px 20px;
+            background-color: #34495e; /* Dark grey-blue */
+            color: #ecf0f1; /* Light grey text */
+            font-size: 0.9em;
+            width: 100%;
+        }
+        footer a {
+            color: #6DD5FA; /* Light blue links for footer */
+            text-decoration: none;
+            margin: 0 8px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            header h1 { font-size: 2.2em; }
+            header p.tagline { font-size: 1em; }
+            .container { margin: 15px; padding: 15px; }
+            .section h2 { font-size: 1.5em; }
+            .section p, .section ul li { font-size: 1em; }
+            .app-stores img { height: 40px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <header>
+            <!-- ** OPTIONAL: Add your app icon here ** -->
+            <!-- <img src="path/to/your/appicon.png" alt="GymSync App Icon" class="app-icon"> -->
+            <h1>GymSync</h1>
+            <p class="tagline">Your Ultimate Fitness Companion.</p>
+        </header>
+
+        <div class="container">
+            <section class="section">
+                <h2>About GymSync</h2>
+                <p>
+                    GymSync is designed to be your all-in-one solution for achieving your fitness aspirations. 
+                    Whether you're looking to build muscle, lose fat, or simply maintain a healthy lifestyle, 
+                    GymSync provides the tools and guidance you need.
+                </p>
+                <p>
+                    Track your workouts, log your meals with our extensive food database or custom entries, 
+                    create personalized routines, and get instant fitness advice from our integrated AI Coach. 
+                    For those seeking expert guidance, connect with certified coaches for personalized plans and support.
+                </p>
+            </section>
+
+            <section class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Personalized Workout Planning & Tracking</li>
+                    <li>Comprehensive Meal Logging & Macro Calculation</li>
+                    <li>AI-Powered Fitness Coach for Instant Advice</li>
+                    <li>Custom Food, Exercise, and Recipe Creation</li>
+                    <li>Workout History and Progress Monitoring</li>
+                    <li>(Coming Soon!) Access to Certified Personal Coaches</li>
+                </ul>
+            </section>
+            
+            <!-- ** FUTURE: App Store Links ** -->
+            <!-- 
+            <section class="app-stores">
+                <a href="#" target="_blank"><img src="path/to/app-store-badge.svg" alt="Download on the App Store"></a>
+                <a href="#" target="_blank"><img src="path/to/google-play-badge.png" alt="Get it on Google Play"></a>
+            </section>
+            -->
+
+        </div> <!-- .container -->
+
+        <footer>
+            <p>
+                <a href="terms-of-service.html">Terms of Service</a> | 
+                <a href="privacy-policy.html">Privacy Policy</a>
+            </p>
+            <p>© <span id="year"></span> GymSync. All rights reserved.</p>
+        </footer>
+    </div> <!-- .page-wrapper -->
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
