@@ -29,11 +29,9 @@
                     <p class="tagline">Plan workouts, track macros, chat with an AI coach, and connect with certified personal trainers. All in one powerful app!</p>
                     <div class="hero-cta">
                         <div class="app-store-text-link coming-soon">
-                             <img src="images/appstore-badge-placeholder.svg" alt="Apple App Store Icon" class="store-icon-inline">
                             <span>Coming soon on iOS</span>
                         </div>
                         <a href="https://www.mediafire.com/file/cnsownu20dexjjo/app-release.apk/file" target="_blank" class="app-store-text-link android">
-                             <img src="images/googleplay-badge.png" alt="Google Play Icon" class="store-icon-inline"> <!-- You can use a generic android icon too -->
                             <span>Get it on Android</span>
                         </a>
                     </div>
@@ -152,6 +150,7 @@
 
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
+        // Simple smooth scroll for nav links and coming soon popups
         document.querySelectorAll('header nav a, .pricing-card a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 const targetId = this.getAttribute('href');

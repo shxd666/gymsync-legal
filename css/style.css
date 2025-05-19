@@ -150,31 +150,22 @@ header nav a:hover {
 }
 
 .app-store-text-link {
-    display: inline-flex; /* Use inline-flex for icon and text alignment */
-    align-items: center; /* Vertically align icon and text */
-    padding: 10px 20px; /* Adjusted padding */
-    border-radius: 8px; /* Slightly less rounded than pill */
+    display: inline-block; 
+    padding: 12px 25px; 
+    border-radius: 8px; 
     font-weight: 600;
-    font-size: 0.95em; /* Adjusted font size */
+    font-size: 1em; 
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
     text-align: center;
-    min-width: 200px; /* Ensure buttons have a decent width */
+    min-width: 200px; 
     box-sizing: border-box;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Subtle shadow */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); 
 }
-
-.app-store-text-link .store-icon-inline {
-    height: 20px; /* Size for inline icons */
-    width: 20px;
-    margin-right: 8px;
-    opacity: 0.9;
-}
-
 
 .app-store-text-link.android {
     background-color: #ffffff; 
-    color: #3DDC84; /* Google Play's green */
+    color: #3DDC84; 
     border: 1px solid #DAE4F0; 
 }
 .app-store-text-link.android:hover {
@@ -182,11 +173,6 @@ header nav a:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.08);
 }
-.app-store-text-link.android .store-icon-inline {
-     /* Assuming googleplay-badge.png is already colored. If it's a monochrome SVG, you might add: */
-     /* filter: invert(65%) sepia(68%) saturate(463%) hue-rotate(85deg) brightness(95%) contrast(90%); */
-}
-
 
 .app-store-text-link.coming-soon {
     background-color: rgba(255, 255, 255, 0.2); 
@@ -195,12 +181,7 @@ header nav a:hover {
     cursor: default; 
 }
 .app-store-text-link.coming-soon:hover {
-    background-color: rgba(255, 255, 255, 0.25); /* Slight hover change */
-}
-.app-store-text-link.coming-soon .store-icon-inline {
-    /* Assuming appstore-badge-placeholder.svg is white or light gray. If black, invert it */
-    filter: brightness(0) invert(1); /* Makes a black SVG white */
-    opacity: 0.7;
+    background-color: rgba(255, 255, 255, 0.25); 
 }
 .app-store-text-link.coming-soon span {
     opacity: 0.8;
@@ -299,10 +280,10 @@ header nav a:hover {
     margin-bottom: 10px;
     display: flex; 
     align-items: center;
-    justify-content: inherit; /* Changed from center for normal flow */
+    justify-content: inherit; 
 }
 .feature-text.feature-text-full-width h3 {
-    justify-content: center; /* Center if text is centered */
+    justify-content: center; 
 }
 
 
@@ -564,10 +545,7 @@ footer a {
         font-size: 0.95em;
         padding: 10px 20px;
     }
-    .app-store-text-link .store-icon-inline {
-        height: 18px; /* Slightly smaller inline icons for mobile */
-        width: 18px;
-    }
+    /* .app-store-text-link .store-icon-inline - was removed, so no specific style needed here anymore */
 
 
     .container { padding: 0 15px; }
