@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GymSync - Your Ultimate Fitness Companion</title>
-    <link rel="stylesheet" href="css/style.css"> <!-- Link to your CSS file -->
-    <!-- Optional: Link to a Google Font -->
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="page-wrapper">
         <header>
             <div class="nav-container">
-                <!-- <img src="images/logo.png" alt="GymSync Logo" class="logo"> -->
-                <span class="logo-text">GymSync</span>
-                <!-- Basic Nav (optional, can be expanded) -->
+                <div class="logo-area">
+                    <img src="images/logo.png" alt="GymSync Logo" class="logo-img">
+                    <span class="logo-text">GymSync</span>
+                </div>
                 <nav>
                     <a href="#features">Features</a>
                     <a href="#pricing">Pricing</a>
@@ -29,13 +29,16 @@
                     <h1>Your Ultimate Fitness Companion</h1>
                     <p class="tagline">Plan workouts, track macros, chat with an AI coach, and connect with certified personal trainers. All in one powerful app!</p>
                     <div class="hero-cta">
-                        <!-- Placeholder for App Store buttons -->
-                        <a href="#" class="app-store-link"><img src="images/appstore-badge.svg" alt="Download on the App Store"></a>
-                        <a href="#" class="app-store-link"><img src="images/googleplay-badge.png" alt="Get it on Google Play"></a>
+                        <div class="app-store-placeholder">
+                            <img src="images/appstore-badge-placeholder.svg" alt="Apple App Store Icon" class="store-icon-placeholder">
+                            <span>Coming soon on the App Store</span>
+                        </div>
+                        <a href="https://www.mediafire.com/file/cnsownu20dexjjo/app-release.apk/file" target="_blank" class="app-store-link">
+                            <img src="images/googleplay-badge.png" alt="Get it on Google Play">
+                        </a>
                     </div>
                 </div>
                 <div class="hero-image-container">
-                    <!-- ** Placeholder for a phone mockup showing your app's home screen ** -->
                     <img src="images/screenshot-home-light.png" alt="GymSync App Home Screen" class="hero-app-mockup">
                 </div>
             </section>
@@ -48,22 +51,20 @@
             <section id="features" class="container section-padding">
                 <h2>Powerful Features, Seamless Experience</h2>
                 
-                <!-- Feature 1: Workout Planning -->
                 <div class="feature-row">
                     <div class="feature-image">
                         <img src="images/screenshot-workout-planner-light.png" alt="GymSync Workout Planner">
                     </div>
                     <div class="feature-text">
-                        <img src="images/feature-icon-workout.svg" alt="" class="feature-icon">
+                        <img src="images/feature-icon-workout.svg" alt="Workout Icon" class="feature-icon">
                         <h3>Personalized Workout Planning</h3>
                         <p>Craft custom routines tailored to your goals or choose from our expert-designed library. Log every set, rep, and weight to meticulously monitor your progress and push your limits.</p>
                     </div>
                 </div>
 
-                <!-- Feature 2: Nutrition Tracking -->
                 <div class="feature-row alt-layout">
                     <div class="feature-text">
-                        <img src="images/feature-icon-nutrition.svg" alt="" class="feature-icon">
+                        <img src="images/feature-icon-nutrition.svg" alt="Nutrition Icon" class="feature-icon">
                         <h3>Smart Nutrition Logging</h3>
                         <p>Effortlessly track your meals and macronutrients. Search our vast food database, scan barcodes, or create custom foods and recipes to understand your intake and make informed dietary choices.</p>
                     </div>
@@ -72,27 +73,24 @@
                     </div>
                 </div>
 
-                <!-- Feature 3: AI Coach -->
                 <div class="feature-row">
                     <div class="feature-image">
                         <img src="images/screenshot-ai-chat-light.png" alt="GymSync AI Coach">
                     </div>
                     <div class="feature-text">
-                        <img src="images/feature-icon-ai.svg" alt="" class="feature-icon">
+                        <img src="images/feature-icon-ai.svg" alt="AI Icon" class="feature-icon">
                         <h3>AI-Powered Fitness Coach</h3>
                         <p>Have a question? Need form advice or a motivation boost? Our intelligent AI Coach is available 24/7 to provide instant answers and support your fitness journey.</p>
                     </div>
                 </div>
                 
-                <!-- Feature 4: Human Coaching (Premium) -->
                 <div class="feature-row alt-layout">
                      <div class="feature-text">
-                        <img src="images/feature-icon-coach.svg" alt="" class="feature-icon">
+                        <img src="images/feature-icon-coach.svg" alt="Coach Icon" class="feature-icon">
                         <h3>Connect with Certified Coaches</h3>
                         <p>Elevate your training with GymSync Premium. Access our marketplace of vetted personal coaches who will design bespoke workout and nutrition plans, delivered and managed right within the app.</p>
                     </div>
                     <div class="feature-image">
-                         <!-- ** Placeholder for a mockup of coach interaction screen ** -->
                         <img src="images/screenshot-coach-interaction.png" alt="GymSync Coach Interaction">
                     </div>
                 </div>
@@ -111,10 +109,10 @@
                             <li>AI Coach (Limited Queries)</li>
                             <li>Community Access</li>
                         </ul>
-                        <a href="#" class="cta-button-secondary disabled-link">Currently Active</a> <!-- Or "Get Started" if it's a CTA -->
+                        <a href="https://www.mediafire.com/file/cnsownu20dexjjo/app-release.apk/file" target="_blank" class="cta-button-secondary">Download Now</a>
                     </div>
                     <div class="pricing-card popular">
-                        <div class="popular-badge">POPULAR</div>
+                        <div class="popular-badge">PREMIUM</div>
                         <h3>GymSync Pro</h3>
                         <p class="price-tag">$9.99 <span class="price-duration">/ month</span></p>
                          <ul class="features-list">
@@ -125,7 +123,7 @@
                             <li>Ad-Free Experience</li>
                             <li>Detailed Progress Analytics</li>
                         </ul>
-                        <a href="#coming-soon" class="cta-button">Go Pro (Coming Soon!)</a>
+                        <a href="#coming-soon-pro" class="cta-button">Go Pro (Coming Soon!)</a>
                     </div>
                     <div class="pricing-card">
                         <h3>GymSync Coach Connect</h3>
@@ -137,10 +135,11 @@
                             <li><strong>Direct In-App Coach Chat</strong></li>
                             <li>Priority Support</li>
                         </ul>
-                        <a href="#coming-soon" class="cta-button-secondary">Find a Coach (Coming Soon!)</a>
+                        <a href="#coming-soon-coach" class="cta-button-secondary">Find a Coach (Coming Soon!)</a>
                     </div>
                 </div>
-                 <p class="pricing-note" id="coming-soon" style="text-align:center; margin-top:20px;"><em>Paid subscriptions and coaching features are launching soon!</em></p>
+                 <p class="pricing-note" id="coming-soon-pro" style="text-align:center; margin-top:20px; display:none;"><em>Pro features are launching soon! Stay tuned.</em></p>
+                 <p class="pricing-note" id="coming-soon-coach" style="text-align:center; margin-top:20px; display:none;"><em>Coaching features are launching soon! Get ready.</em></p>
             </section>
         </main>
 
@@ -156,17 +155,30 @@
 
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
-        // Simple smooth scroll for nav links
-        document.querySelectorAll('header nav a').forEach(anchor => {
+        // Simple smooth scroll for nav links and coming soon popups
+        document.querySelectorAll('header nav a, .pricing-card a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 const targetId = this.getAttribute('href');
                 if (targetId.startsWith('#') && targetId.length > 1) {
-                    e.preventDefault();
-                    const targetElement = document.getElementById(targetId.substring(1));
-                    if (targetElement) {
-                        targetElement.scrollIntoView({
-                            behavior: 'smooth'
-                        });
+                    const actualId = targetId.substring(1);
+                    if (actualId.startsWith('coming-soon')) {
+                         e.preventDefault();
+                         const noteElement = document.getElementById(actualId);
+                         if(noteElement) {
+                             noteElement.style.display = 'block';
+                             setTimeout(() => { noteElement.style.display = 'none'; }, 3000);
+                         } else {
+                             // Fallback alert if the specific coming-soon p tag is not found
+                             alert(this.textContent.replace(/\s*\(Coming Soon!\)$/i, '') + " is coming soon!");
+                         }
+                    } else {
+                        const targetElement = document.getElementById(actualId);
+                        if (targetElement) {
+                             e.preventDefault();
+                            targetElement.scrollIntoView({
+                                behavior: 'smooth'
+                            });
+                        }
                     }
                 }
             });
