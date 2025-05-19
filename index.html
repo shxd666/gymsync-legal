@@ -4,171 +4,151 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GymSync - Your Ultimate Fitness Companion</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f2f5; /* A slightly softer light background */
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            align-items: center; /* Center content horizontally */
-        }
-        .page-wrapper {
-            width: 100%;
-            max-width: 960px; /* Max width for content */
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-        }
-        header {
-            background: linear-gradient(135deg, #6DD5FA, #2980B9); /* Blue gradient */
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-            border-bottom-left-radius: 20px;
-            border-bottom-right-radius: 20px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-        header .app-icon { /* For your app icon image */
-            max-height: 80px; /* Adjust as needed */
-            margin-bottom: 15px;
-            border-radius: 16px; /* If your icon has a background */
-            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.8em;
-            font-weight: bold;
-            letter-spacing: 1px;
-        }
-        header p.tagline {
-            margin-top: 8px;
-            font-size: 1.2em;
-            font-weight: 300;
-            opacity: 0.9;
-        }
-        .container {
-            padding: 30px 20px;
-            background-color: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-            margin: 20px; /* Margin around the main content block */
-            flex-grow: 1;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-        .section h2 {
-            font-size: 1.8em;
-            color: #2c3e50; /* Dark blue-grey */
-            margin-bottom: 15px;
-            padding-bottom: 5px;
-            border-bottom: 2px solid #3498db; /* Blue accent */
-        }
-        .section p, .section ul li {
-            font-size: 1.05em;
-            color: #555;
-            margin-bottom: 10px;
-        }
-        .section ul {
-            list-style: disc;
-            padding-left: 20px;
-        }
-        .app-stores { /* For App Store / Play Store buttons */
-            text-align: center;
-            margin-top: 30px;
-            margin-bottom: 20px;
-        }
-        .app-stores img {
-            height: 50px; /* Adjust as needed */
-            margin: 0 10px;
-            transition: transform 0.2s ease-in-out;
-        }
-        .app-stores img:hover {
-            transform: scale(1.05);
-        }
-        footer {
-            text-align: center;
-            padding: 25px 20px;
-            background-color: #34495e; /* Dark grey-blue */
-            color: #ecf0f1; /* Light grey text */
-            font-size: 0.9em;
-            width: 100%;
-        }
-        footer a {
-            color: #6DD5FA; /* Light blue links for footer */
-            text-decoration: none;
-            margin: 0 8px;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 600px) {
-            header h1 { font-size: 2.2em; }
-            header p.tagline { font-size: 1em; }
-            .container { margin: 15px; padding: 15px; }
-            .section h2 { font-size: 1.5em; }
-            .section p, .section ul li { font-size: 1em; }
-            .app-stores img { height: 40px; }
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css"> <!-- Link to your CSS file -->
+    <!-- Optional: Link to a Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="page-wrapper">
         <header>
-            <!-- ** OPTIONAL: Add your app icon here ** -->
-            <!-- <img src="path/to/your/appicon.png" alt="GymSync App Icon" class="app-icon"> -->
-            <h1>GymSync</h1>
-            <p class="tagline">Your Ultimate Fitness Companion.</p>
+            <div class="nav-container">
+                <!-- <img src="images/logo.png" alt="GymSync Logo" class="logo"> -->
+                <span class="logo-text">GymSync</span>
+                <!-- Basic Nav (optional, can be expanded) -->
+                <nav>
+                    <a href="#features">Features</a>
+                    <a href="#pricing">Pricing</a>
+                    <!-- <a href="#contact">Contact</a> -->
+                </nav>
+            </div>
         </header>
 
-        <div class="container">
-            <section class="section">
-                <h2>About GymSync</h2>
-                <p>
-                    GymSync is designed to be your all-in-one solution for achieving your fitness aspirations. 
-                    Whether you're looking to build muscle, lose fat, or simply maintain a healthy lifestyle, 
-                    GymSync provides the tools and guidance you need.
-                </p>
-                <p>
-                    Track your workouts, log your meals with our extensive food database or custom entries, 
-                    create personalized routines, and get instant fitness advice from our integrated AI Coach. 
-                    For those seeking expert guidance, connect with certified coaches for personalized plans and support.
-                </p>
+        <main>
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Your Ultimate Fitness Companion</h1>
+                    <p class="tagline">Plan workouts, track macros, chat with an AI coach, and connect with certified personal trainers. All in one powerful app!</p>
+                    <div class="hero-cta">
+                        <!-- Placeholder for App Store buttons -->
+                        <a href="#" class="app-store-link"><img src="images/appstore-badge.svg" alt="Download on the App Store"></a>
+                        <a href="#" class="app-store-link"><img src="images/googleplay-badge.png" alt="Get it on Google Play"></a>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <!-- ** Placeholder for a phone mockup showing your app's home screen ** -->
+                    <img src="images/screenshot-home-light.png" alt="GymSync App Home Screen" class="hero-app-mockup">
+                </div>
             </section>
 
-            <section class="section">
-                <h2>Key Features</h2>
-                <ul>
-                    <li>Personalized Workout Planning & Tracking</li>
-                    <li>Comprehensive Meal Logging & Macro Calculation</li>
-                    <li>AI-Powered Fitness Coach for Instant Advice</li>
-                    <li>Custom Food, Exercise, and Recipe Creation</li>
-                    <li>Workout History and Progress Monitoring</li>
-                    <li>(Coming Soon!) Access to Certified Personal Coaches</li>
-                </ul>
+            <section id="about" class="container section-padding">
+                <h2>What is GymSync?</h2>
+                <p>GymSync is meticulously designed to be your all-in-one solution for achieving your fitness aspirations. Whether you're aiming to build muscle, shed fat, or simply embrace a healthier lifestyle, GymSync equips you with the essential tools and guidance. Effortlessly track your workouts, log meals using our extensive database or your custom entries, design personalized routines, and receive instant fitness advice from our intelligent AI Coach. For those seeking an elevated experience, connect with certified personal coaches for truly bespoke plans and dedicated support, all managed within the app.</p>
             </section>
-            
-            <!-- ** FUTURE: App Store Links ** -->
-            <!-- 
-            <section class="app-stores">
-                <a href="#" target="_blank"><img src="path/to/app-store-badge.svg" alt="Download on the App Store"></a>
-                <a href="#" target="_blank"><img src="path/to/google-play-badge.png" alt="Get it on Google Play"></a>
-            </section>
-            -->
 
-        </div> <!-- .container -->
+            <section id="features" class="container section-padding">
+                <h2>Powerful Features, Seamless Experience</h2>
+                
+                <!-- Feature 1: Workout Planning -->
+                <div class="feature-row">
+                    <div class="feature-image">
+                        <img src="images/screenshot-workout-planner-light.png" alt="GymSync Workout Planner">
+                    </div>
+                    <div class="feature-text">
+                        <img src="images/feature-icon-workout.svg" alt="" class="feature-icon">
+                        <h3>Personalized Workout Planning</h3>
+                        <p>Craft custom routines tailored to your goals or choose from our expert-designed library. Log every set, rep, and weight to meticulously monitor your progress and push your limits.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 2: Nutrition Tracking -->
+                <div class="feature-row alt-layout">
+                    <div class="feature-text">
+                        <img src="images/feature-icon-nutrition.svg" alt="" class="feature-icon">
+                        <h3>Smart Nutrition Logging</h3>
+                        <p>Effortlessly track your meals and macronutrients. Search our vast food database, scan barcodes, or create custom foods and recipes to understand your intake and make informed dietary choices.</p>
+                    </div>
+                    <div class="feature-image">
+                        <img src="images/screenshot-meal-log-light.png" alt="GymSync Meal Logging">
+                    </div>
+                </div>
+
+                <!-- Feature 3: AI Coach -->
+                <div class="feature-row">
+                    <div class="feature-image">
+                        <img src="images/screenshot-ai-chat-light.png" alt="GymSync AI Coach">
+                    </div>
+                    <div class="feature-text">
+                        <img src="images/feature-icon-ai.svg" alt="" class="feature-icon">
+                        <h3>AI-Powered Fitness Coach</h3>
+                        <p>Have a question? Need form advice or a motivation boost? Our intelligent AI Coach is available 24/7 to provide instant answers and support your fitness journey.</p>
+                    </div>
+                </div>
+                
+                <!-- Feature 4: Human Coaching (Premium) -->
+                <div class="feature-row alt-layout">
+                     <div class="feature-text">
+                        <img src="images/feature-icon-coach.svg" alt="" class="feature-icon">
+                        <h3>Connect with Certified Coaches</h3>
+                        <p>Elevate your training with GymSync Premium. Access our marketplace of vetted personal coaches who will design bespoke workout and nutrition plans, delivered and managed right within the app.</p>
+                    </div>
+                    <div class="feature-image">
+                         <!-- ** Placeholder for a mockup of coach interaction screen ** -->
+                        <img src="images/screenshot-coach-interaction.png" alt="GymSync Coach Interaction">
+                    </div>
+                </div>
+            </section>
+
+            <section id="pricing" class="container section-padding pricing-section">
+                <h2>Unlock Your Potential</h2>
+                 <p class="section-subtitle">Choose the plan that's right for you and start your transformation today.</p>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <h3>GymSync Basic</h3>
+                        <p class="price-tag">Free</p>
+                        <ul class="features-list">
+                            <li>Workout Tracking (Limited Routines)</li>
+                            <li>Basic Meal Logging</li>
+                            <li>AI Coach (Limited Queries)</li>
+                            <li>Community Access</li>
+                        </ul>
+                        <a href="#" class="cta-button-secondary disabled-link">Currently Active</a> <!-- Or "Get Started" if it's a CTA -->
+                    </div>
+                    <div class="pricing-card popular">
+                        <div class="popular-badge">POPULAR</div>
+                        <h3>GymSync Pro</h3>
+                        <p class="price-tag">$9.99 <span class="price-duration">/ month</span></p>
+                         <ul class="features-list">
+                            <li>All Basic Features</li>
+                            <li>Unlimited Custom Routines</li>
+                            <li>Advanced Nutrition Tracking & Recipes</li>
+                            <li>Unlimited AI Coach Access</li>
+                            <li>Ad-Free Experience</li>
+                            <li>Detailed Progress Analytics</li>
+                        </ul>
+                        <a href="#coming-soon" class="cta-button">Go Pro (Coming Soon!)</a>
+                    </div>
+                    <div class="pricing-card">
+                        <h3>GymSync Coach Connect</h3>
+                         <p class="price-tag"><span class="price-from">From</span> $49.99 <span class="price-duration">/ month</span></p>
+                         <ul class="features-list">
+                            <li>All Pro Features</li>
+                            <li><strong>Access to Coach Marketplace</strong></li>
+                            <li><strong>Personalized Plans by Your Coach</strong></li>
+                            <li><strong>Direct In-App Coach Chat</strong></li>
+                            <li>Priority Support</li>
+                        </ul>
+                        <a href="#coming-soon" class="cta-button-secondary">Find a Coach (Coming Soon!)</a>
+                    </div>
+                </div>
+                 <p class="pricing-note" id="coming-soon" style="text-align:center; margin-top:20px;"><em>Paid subscriptions and coaching features are launching soon!</em></p>
+            </section>
+        </main>
 
         <footer>
             <p>
                 <a href="terms-of-service.html">Terms of Service</a> | 
-                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="privacy-policy.html">Privacy Policy</a> |
+                <a href="mailto:gymsynctheapp@gmail.com">Contact Us</a>
             </p>
             <p>© <span id="year"></span> GymSync. All rights reserved.</p>
         </footer>
@@ -176,6 +156,21 @@
 
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
+        // Simple smooth scroll for nav links
+        document.querySelectorAll('header nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href');
+                if (targetId.startsWith('#') && targetId.length > 1) {
+                    e.preventDefault();
+                    const targetElement = document.getElementById(targetId.substring(1));
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
     </script>
 </body>
 </html>
