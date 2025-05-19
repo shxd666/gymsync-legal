@@ -42,7 +42,7 @@ a:hover {
 
 .container {
     width: 100%;
-    max-width: 1100px;
+    max-width: 1100px; 
     margin: 0 auto;
     padding: 0 20px; 
 }
@@ -54,9 +54,9 @@ a:hover {
 
 /* --- Header & Navigation --- */
 header {
-    background: linear-gradient(135deg, #5E72EB, #2980B9); /* Updated gradient */
+    background: linear-gradient(135deg, #5E72EB, #2980B9); 
     color: white;
-    padding: 15px 0; /* Adjusted padding */
+    padding: 15px 0; 
     text-align: center;
     position: sticky;
     top: 0;
@@ -73,7 +73,7 @@ header .nav-container {
     padding: 0 20px;
 }
 
-header .logo-area { /* Container for logo image and text */
+header .logo-area { 
     display: flex;
     align-items: center;
 }
@@ -112,17 +112,17 @@ header nav a:hover {
 .hero {
     background: linear-gradient(rgba(44, 62, 80, 0.6), rgba(44, 62, 80, 0.6)), url('../images/hero-image.jpg') no-repeat center center/cover; 
     color: white;
-    padding: 60px 20px 80px 20px; /* Adjusted padding */
+    padding: 60px 20px 80px 20px; 
     text-align: center;
     display: flex;
-    flex-direction: column; /* Stack content and image on all screens initially */
+    flex-direction: column; 
     align-items: center;
     justify-content: center;
 }
 
 .hero-content {
-    max-width: 650px; /* Max width for text content */
-    margin-bottom: 30px; /* Space below text before image */
+    max-width: 650px; 
+    margin-bottom: 30px; 
 }
 
 .hero h1 {
@@ -144,53 +144,77 @@ header nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-    flex-wrap: wrap;
+    gap: 20px; 
+    flex-wrap: wrap; 
+    margin-top: 30px; 
 }
 
-.hero-cta .app-store-link img {
-    height: 50px;
-    transition: transform 0.2s ease-in-out;
-}
-.hero-cta .app-store-link img:hover {
-    transform: scale(1.05);
-}
-
-.app-store-placeholder {
-    display: inline-flex; 
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.15); 
-    padding: 8px 15px;
-    border-radius: 8px; 
-    height: 50px; 
+.app-store-text-link {
+    display: inline-flex; /* Use inline-flex for icon and text alignment */
+    align-items: center; /* Vertically align icon and text */
+    padding: 10px 20px; /* Adjusted padding */
+    border-radius: 8px; /* Slightly less rounded than pill */
+    font-weight: 600;
+    font-size: 0.95em; /* Adjusted font size */
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    text-align: center;
+    min-width: 200px; /* Ensure buttons have a decent width */
     box-sizing: border-box;
-    border: 1px solid rgba(255,255,255,0.3);
-    color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Subtle shadow */
 }
 
-.app-store-placeholder .store-icon-placeholder {
-    height: 24px; 
-    width: 24px;
+.app-store-text-link .store-icon-inline {
+    height: 20px; /* Size for inline icons */
+    width: 20px;
     margin-right: 8px;
-    /* Ensure you have an Apple logo SVG/PNG named 'appstore-badge-placeholder.svg' in images/ */
-    /* If it's a white logo, it will blend. Use a colored one or adjust opacity */
-    opacity: 0.8; 
-}
-
-.app-store-placeholder span {
-    font-size: 0.9em;
-    font-weight: 500;
     opacity: 0.9;
 }
 
+
+.app-store-text-link.android {
+    background-color: #ffffff; 
+    color: #3DDC84; /* Google Play's green */
+    border: 1px solid #DAE4F0; 
+}
+.app-store-text-link.android:hover {
+    background-color: #f8f9fa;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+.app-store-text-link.android .store-icon-inline {
+     /* Assuming googleplay-badge.png is already colored. If it's a monochrome SVG, you might add: */
+     /* filter: invert(65%) sepia(68%) saturate(463%) hue-rotate(85deg) brightness(95%) contrast(90%); */
+}
+
+
+.app-store-text-link.coming-soon {
+    background-color: rgba(255, 255, 255, 0.2); 
+    color: #ffffff; 
+    border: 1px solid rgba(255,255,255,0.4);
+    cursor: default; 
+}
+.app-store-text-link.coming-soon:hover {
+    background-color: rgba(255, 255, 255, 0.25); /* Slight hover change */
+}
+.app-store-text-link.coming-soon .store-icon-inline {
+    /* Assuming appstore-badge-placeholder.svg is white or light gray. If black, invert it */
+    filter: brightness(0) invert(1); /* Makes a black SVG white */
+    opacity: 0.7;
+}
+.app-store-text-link.coming-soon span {
+    opacity: 0.8;
+}
+
+
 .hero-image-container {
     width: 100%;
-    max-width: 350px; /* Max width for the phone mockup image */
+    max-width: 350px; 
     text-align: center; 
 }
 
 .hero-app-mockup {
-    width: 100%; /* Make image responsive within its container */
+    width: 100%; 
     height: auto;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
@@ -199,7 +223,7 @@ header nav a:hover {
 
 /* --- About Section --- */
 #about {
-    background-color: #ffffff; /* White background for contrast */
+    background-color: #ffffff; 
 }
 #about h2 {
     text-align: center;
@@ -215,7 +239,7 @@ header nav a:hover {
 
 /* --- Features Section --- */
 #features {
-    background-color: #f9fafb; /* Slightly off-white */
+    background-color: #f9fafb; 
 }
 #features h2, .pricing-section h2 {
     text-align: center;
@@ -234,8 +258,8 @@ header nav a:hover {
 
 .feature-row {
     display: flex;
-    align-items: center;
-    margin-bottom: 60px; /* Increased spacing */
+    align-items: center; 
+    margin-bottom: 60px; 
     gap: 40px; 
 }
 
@@ -244,22 +268,58 @@ header nav a:hover {
 }
 
 .feature-text, .feature-image {
-    flex: 1;
+    flex: 1; 
 }
+
+.feature-text.feature-text-full-width {
+    flex: 2; 
+    text-align: center; 
+}
+.feature-text.feature-text-full-width .feature-icon {
+    margin-left: auto;
+    margin-right: auto; 
+}
+.feature-text.feature-text-full-width p {
+    max-width: 600px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 .feature-icon {
     width: 48px; 
     height: 48px;
     margin-bottom: 15px;
-    /* Example: If your SVGs are single color and you want to color them with CSS */
-    /* filter: invert(56%) sepia(67%) saturate(475%) hue-rotate(170deg) brightness(93%) contrast(90%); */
+    color: #3498db; 
 }
 
 .feature-text h3 {
     font-size: 1.6em;
     color: #3498db; 
     margin-bottom: 10px;
+    display: flex; 
+    align-items: center;
+    justify-content: inherit; /* Changed from center for normal flow */
 }
+.feature-text.feature-text-full-width h3 {
+    justify-content: center; /* Center if text is centered */
+}
+
+
+.coming-soon-badge {
+    display: inline-block;
+    background-color: #e67e22; 
+    color: white;
+    font-size: 0.5em; 
+    padding: 4px 8px;
+    border-radius: 10px;
+    margin-left: 8px;
+    font-weight: 600;
+    vertical-align: middle; 
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
 
 .feature-image img {
     width: 100%;
@@ -285,8 +345,8 @@ header nav a:hover {
 }
 
 .pricing-card {
-    background-color: #fdfdfd; /* Slightly off-white card */
-    border: 1px solid #e7eaf3; /* Soft border */
+    background-color: #fdfdfd; 
+    border: 1px solid #e7eaf3; 
     border-radius: 12px;
     padding: 30px;
     box-shadow: 0 5px 25px rgba(0,0,0,0.05);
@@ -303,7 +363,7 @@ header nav a:hover {
 .pricing-card.popular {
     border: 2px solid #3498db; 
     position: relative;
-    background-color: white; /* Make popular card stand out more */
+    background-color: white; 
     box-shadow: 0 10px 35px rgba(52, 152, 219, 0.2);
 }
 
@@ -401,10 +461,11 @@ header nav a:hover {
     border: 1px solid #bdc3c7; 
 }
 .pricing-card .cta-button-secondary:hover {
-    background-color: #f0f2f5; /* Light hover for secondary */
+    background-color: #f0f2f5; 
     border-color: #a7b0b6;
     transform: translateY(-2px);
 }
+
 
 /* --- Footer --- */
 footer {
@@ -414,6 +475,7 @@ footer {
     color: #bdc3c7; 
     font-size: 0.9em;
     width: 100%;
+    margin-top: auto; 
 }
 
 footer a {
@@ -424,17 +486,17 @@ footer a {
 /* --- Responsive Adjustments --- */
 @media (max-width: 992px) {
     .hero {
-        flex-direction: column; /* Stack hero content and image */
+        flex-direction: column; 
     }
     .hero-content {
         padding-right: 0;
         text-align: center;
         margin-bottom: 30px;
-        flex-basis: auto; /* Allow content to size naturally */
+        flex-basis: auto; 
     }
     .hero-image-container {
         margin-top: 20px;
-        flex-basis: auto; /* Allow image to size naturally */
+        flex-basis: auto; 
     }
     .feature-row, .feature-row.alt-layout {
         flex-direction: column;
@@ -445,10 +507,10 @@ footer a {
     }
     .feature-text {
         margin-bottom: 20px;
-        order: 1; /* Ensure text is below image if image comes first */
+        order: 1; 
     }
      .feature-row.alt-layout .feature-text {
-        order: 0; /* Text first in alt layout on mobile */
+        order: 0; 
     }
     .feature-icon {
         margin-left: auto;
@@ -480,6 +542,7 @@ footer a {
     .pricing-section .section-subtitle { font-size: 1em; margin-bottom: 30px; }
     .pricing-card { padding: 25px; }
     .price-tag { font-size: 2.2em; }
+
 }
 
 @media (max-width: 480px) {
@@ -490,10 +553,22 @@ footer a {
     .hero h1 { font-size: 1.8em; }
     .hero p.tagline { font-size: 1em; }
     .hero-app-mockup { max-height: 300px; border-radius: 15px;}
-    .hero-cta .app-store-link img { height: 40px; }
-    .app-store-placeholder { height: 40px; padding: 6px 12px; }
-    .app-store-placeholder .store-icon-placeholder { height: 20px; width: 20px; }
-    .app-store-placeholder span { font-size: 0.8em; }
+    
+    .hero-cta {
+        flex-direction: column; 
+        gap: 15px;
+    }
+    .app-store-text-link {
+        width: 100%; 
+        max-width: 280px; 
+        font-size: 0.95em;
+        padding: 10px 20px;
+    }
+    .app-store-text-link .store-icon-inline {
+        height: 18px; /* Slightly smaller inline icons for mobile */
+        width: 18px;
+    }
+
 
     .container { padding: 0 15px; }
     .section-padding { padding-top: 30px; padding-bottom: 30px; }
